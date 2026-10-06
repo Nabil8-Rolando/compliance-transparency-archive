@@ -76,7 +76,6 @@ title: Nabil Amzil — Official Employment & Compliance Archive
 ---
 
 ### 📂 Part 3 — Repository Files
-* **[README.md](./README.md)** — Executive summary and metadata
 * **[Nabil_Amzil_Official_Record_Arabic.md](./Nabil_Amzil_Official_Record_Arabic.md)** — Complete official record (Arabic)
 * **[Nabil_Amzil_Official_Record_English.md](./Nabil_Amzil_Official_Record_English.md)** — Complete official record (English)
 
