@@ -1,3 +1,8 @@
+---
+layout: default
+title: Nabil Amzil — Official Employment & Compliance Archive
+---
+
 # Nabil Amzil — Official Employment & Compliance Archive
 
 ---
@@ -70,7 +75,7 @@
 
 ---
 
-### 📂 Part 2 — Repository Files
+### 📂 Part 3 — Repository Files
 * **[Nabil_Amzil_Official_Record_Arabic.md](./Nabil_Amzil_Official_Record_Arabic.md)** — Complete official record (Arabic)
 * **[Nabil_Amzil_Official_Record_English.md](./Nabil_Amzil_Official_Record_English.md)** — Complete official record (English)
 
