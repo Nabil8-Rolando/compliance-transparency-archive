@@ -156,9 +156,12 @@ Administrative documentation for international supply chain transparency
 ---
 
 ## 🔗 Quick Links | روابط سريعة
-* Full Arabic Record: `Nabil_Amzil_Official_Record_Arabic.md`
-* Full English Record: `Nabil_Amzil_Official_Record_English.md`
-* License Information: CC BY-ND 4.0 International
+* Full Arabic Record: [Full Arabic Record: Nabil_Amzil_Official_Record_Arabic.md](Nabil_Amzil_Official_Record_Arabic.md)
+
+* Full English Record: [Full English Record: Nabil_Amzil_Official_Record_English.md](Nabil_Amzil_Official_Record_English.md)
+
+* License Information: [License Information: CC BY-ND 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/)
+
 
 ---
 
