@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://nabil8-rolando.github.io/compliance-transparency-archive/sitemap.xml
