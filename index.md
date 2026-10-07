@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 ---
 layout: default
 title: Nabil Amzil — Official Employment & Compliance Archive
