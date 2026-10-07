@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabil Amzil — Official Employment & Compliance Archive (Farm 41 / Maraissa)</title>
     
-    <!-- Search Engine Optimization (SEO) -->
+    <!-- SEO & Metadata -->
     <meta name="description" content="Official administrative archive and compliance dataset documenting employment records, CNSS wage declarations, bank receipts, and supply chain due diligence references for Farm 41 (Maraissa / Azura Group).">
     <meta name="keywords" content="Nabil Amzil, Compliance Archive, LkSG, BAFA 80005772, Farm 41, Maraissa, Azura Group, CNSS Morocco, Supply Chain Due Diligence, Labor Law">
     <meta name="author" content="Nabil Amzil">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://nabil8-rolando.github.io/compliance-transparency-archive/">
 
-    <!-- Open Graph Meta Tags (Social Media & Preview) -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Nabil Amzil — Official Employment & Compliance Archive">
     <meta property="og:description" content="Factual documentation, CNSS declarations, bank receipts, and compliance case references concerning Farm 41 (Maraissa / Azura Group).">
     <meta property="og:type" content="website">
@@ -20,12 +20,7 @@
     <meta property="og:site_name" content="Compliance Transparency Archive">
     <meta property="og:locale" content="en_US">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nabil Amzil — Official Employment & Compliance Archive">
-    <meta name="twitter:description" content="Immutable administrative archive for employment records, wage data, and regulatory references (BAFA 80005772).">
-
-    <!-- JSON-LD Structured Data (Google Schema) -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -44,21 +39,10 @@
         }
       },
       "license": "https://creativecommons.org/licenses/by-nd/4.0/",
-      "isAccessibleForFree": true,
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "German Supply Chain Due Diligence Act (LkSG)"
-        },
-        {
-          "@type": "Thing",
-          "name": "Moroccan Labor Code Article 387"
-        }
-      ]
+      "isAccessibleForFree": true
     }
     </script>
 
-    <!-- Professional CSS Styling -->
     <style>
         :root {
             --primary-color: #111827;
@@ -66,10 +50,9 @@
             --bg-light: #f9fafb;
             --text-main: #1f2937;
             --text-muted: #4b5563;
+            --link-color: #1d4ed8;
         }
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #ffffff;
@@ -89,13 +72,8 @@
             color: var(--primary-color);
             margin: 0 0 10px 0;
             font-weight: 700;
-            letter-spacing: -0.02em;
         }
-        .subtitle {
-            font-size: 15px;
-            color: var(--text-muted);
-            margin: 0;
-        }
+        .subtitle { font-size: 15px; color: var(--text-muted); margin: 0; }
         h2 {
             font-size: 19px;
             color: var(--primary-color);
@@ -105,13 +83,7 @@
             margin-bottom: 18px;
             font-weight: 600;
         }
-        h3 {
-            font-size: 16px;
-            color: var(--text-main);
-            margin-top: 25px;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
+        h3 { font-size: 16px; color: var(--text-main); margin-top: 25px; margin-bottom: 12px; font-weight: 600; }
         .section-box {
             background-color: var(--bg-light);
             border-left: 4px solid var(--primary-color);
@@ -119,41 +91,20 @@
             margin-bottom: 30px;
             border-radius: 0 4px 4px 0;
         }
-        ul {
-            margin: 0 0 15px 0;
-            padding-left: 22px;
-        }
-        li {
-            margin-bottom: 8px;
-            font-size: 15px;
-        }
-        .table-container {
-            overflow-x: auto;
-            margin: 15px 0 25px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #ffffff;
-            font-size: 14px;
-        }
-        th, td {
-            border: 1px solid var(--border-color);
-            padding: 12px 15px;
-            text-align: left;
-        }
-        th {
-            background-color: var(--bg-light);
-            color: var(--primary-color);
+        ul { margin: 0 0 15px 0; padding-left: 22px; }
+        li { margin-bottom: 8px; font-size: 15px; }
+        .table-container { overflow-x: auto; margin: 15px 0 25px 0; }
+        table { width: 100%; border-collapse: collapse; background-color: #ffffff; font-size: 14px; }
+        th, td { border: 1px solid var(--border-color); padding: 12px 15px; text-align: left; }
+        th { background-color: var(--bg-light); color: var(--primary-color); font-weight: 600; }
+        .text-right { text-align: right; }
+        .highlight-row { background-color: #f3f4f6; font-weight: 600; }
+        .doc-link {
+            color: var(--link-color);
             font-weight: 600;
+            text-decoration: underline;
         }
-        .text-right {
-            text-align: right;
-        }
-        .highlight-row {
-            background-color: #f3f4f6;
-            font-weight: 600;
-        }
+        .doc-link:hover { color: #1e40af; }
         .license-box {
             background-color: var(--bg-light);
             border: 1px solid var(--border-color);
@@ -174,14 +125,6 @@
             border-radius: 4px;
             font-family: monospace;
             font-size: 13.5px;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 15px;
-            }
-            h1 {
-                font-size: 22px;
-            }
         }
     </style>
 </head>
@@ -228,26 +171,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>October 2025</td>
-                    <td>18</td>
-                    <td class="text-right">1,931.31</td>
-                </tr>
-                <tr>
-                    <td>November 2025</td>
-                    <td>14</td>
-                    <td class="text-right">1,560.38</td>
-                </tr>
-                <tr>
-                    <td>December 2025</td>
-                    <td>15</td>
-                    <td class="text-right">1,504.40</td>
-                </tr>
-                <tr class="highlight-row">
-                    <td>Total</td>
-                    <td>47 Days</td>
-                    <td class="text-right">4,996.09 MAD</td>
-                </tr>
+                <tr><td>October 2025</td><td>18</td><td class="text-right">1,931.31</td></tr>
+                <tr><td>November 2025</td><td>14</td><td class="text-right">1,560.38</td></tr>
+                <tr><td>December 2025</td><td>15</td><td class="text-right">1,504.40</td></tr>
+                <tr class="highlight-row"><td>Total</td><td>47 Days</td><td class="text-right">4,996.09 MAD</td></tr>
             </tbody>
         </table>
     </div>
@@ -262,30 +189,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>October 20, 2025</td>
-                    <td class="text-right">169.20</td>
-                </tr>
-                <tr>
-                    <td>November 4, 2025</td>
-                    <td class="text-right">281.93</td>
-                </tr>
-                <tr>
-                    <td>December 3, 2025</td>
-                    <td class="text-right">227.53</td>
-                </tr>
-                <tr>
-                    <td>December 3, 2025</td>
-                    <td class="text-right">332.67</td>
-                </tr>
-                <tr>
-                    <td>January 5, 2026</td>
-                    <td class="text-right">37.17</td>
-                </tr>
-                <tr class="highlight-row">
-                    <td>Total Paid</td>
-                    <td class="text-right">1,048.50 MAD</td>
-                </tr>
+                <tr><td>October 20, 2025</td><td class="text-right">169.20</td></tr>
+                <tr><td>November 4, 2025</td><td class="text-right">281.93</td></tr>
+                <tr><td>December 3, 2025</td><td class="text-right">227.53</td></tr>
+                <tr><td>December 3, 2025</td><td class="text-right">332.67</td></tr>
+                <tr><td>January 5, 2026</td><td class="text-right">37.17</td></tr>
+                <tr class="highlight-row"><td>Total Paid</td><td class="text-right">1,048.50 MAD</td></tr>
             </tbody>
         </table>
     </div>
@@ -308,18 +217,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Government Declared Gross (CNSS)</td>
-                    <td class="text-right">4,996.09</td>
-                </tr>
-                <tr>
-                    <td>Actual Bank Transfers Received</td>
-                    <td class="text-right">1,048.50</td>
-                </tr>
-                <tr class="highlight-row">
-                    <td>Recorded Numerical Gap</td>
-                    <td class="text-right">3,947.59 MAD (79.02% Discrepancy)</td>
-                </tr>
+                <tr><td>Government Declared Gross (CNSS)</td><td class="text-right">4,996.09</td></tr>
+                <tr><td>Actual Bank Transfers Received</td><td class="text-right">1,048.50</td></tr>
+                <tr class="highlight-row"><td>Recorded Numerical Gap</td><td class="text-right">3,947.59 MAD (79.02% Discrepancy)</td></tr>
             </tbody>
         </table>
     </div>
@@ -340,8 +240,8 @@
 
     <h2>📂 Part 3 — Repository Documentation</h2>
     <ul>
-        <li><span class="code-inline">Nabil_Amzil_Official_Record_Arabic.md</span> — Primary Record (Arabic Version)</li>
-        <li><span class="code-inline">Nabil_Amzil_Official_Record_English.md</span> — Primary Record (English Version)</li>
+        <li>📄 <a class="doc-link" href="Nabil_Amzil_Official_Record_Arabic.html" target="_blank">Nabil_Amzil_Official_Record_Arabic.html</a> — Primary Record (Arabic Version)</li>
+        <li>📄 <a class="doc-link" href="Nabil_Amzil_Official_Record_English.html" target="_blank">Nabil_Amzil_Official_Record_English.html</a> — Primary Record (English Version)</li>
     </ul>
 
     <div class="license-box">
