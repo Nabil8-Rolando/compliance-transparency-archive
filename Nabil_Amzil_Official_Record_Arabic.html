@@ -3,109 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نبيل أمزيل — الأرشيف الرسمي للتوظيف والامتثال (باللغة العربية)</title>
+    <title>نبيل أمزيل — الأرشيف الرسمي للتوظيف والامتثال</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; max-width: 900px; margin: 0 auto; padding: 40px 20px; color: #1f2937; background-color: #fff; }
-        h1 { color: #111827; border-bottom: 2px solid #111827; padding-bottom: 10px; font-size: 24px; }
-        h2 { color: #1f2937; border-bottom: 1px solid #d1d5db; padding-bottom: 6px; margin-top: 30px; font-size: 18px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #d1d5db; padding: 10px 14px; text-align: right; }
-        th { background-color: #f9fafb; font-weight: 600; }
-        .box { background: #f9fafb; border-right: 4px solid #111827; padding: 15px 20px; margin: 20px 0; }
-        .code { background: #f1f5f9; padding: 2px 6px; font-family: monospace; border-radius: 4px; }
+        :root {
+            --primary-color: #111827;
+            --border-color: #d1d5db;
+            --bg-light: #f9fafb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: var(--text-main);
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 950px;
+            padding: 40px 20px;
+        }
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+        }
+        h1 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .subtitle { font-size: 15px; color: var(--text-muted); margin: 0; }
+        h2 {
+            font-size: 19px;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        h3 { font-size: 16px; color: var(--text-main); margin-top: 25px; margin-bottom: 12px; font-weight: 600; }
+        .section-box {
+            background-color: var(--bg-light);
+            border-right: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 4px 0 0 4px;
+        }
+        ul { margin: 0 0 15px 0; padding-right: 22px; }
+        li { margin-bottom: 8px; font-size: 15px; }
+        .table-container { overflow-x: auto; margin: 15px 0 25px 0; }
+        table { width: 100%; border-collapse: collapse; background-color: #ffffff; font-size: 14px; }
+        th, td { border: 1px solid var(--border-color); padding: 12px 15px; text-align: right; }
+        th { background-color: var(--bg-light); color: var(--primary-color); font-weight: 600; }
+        .text-left { text-align: left; }
+        .highlight-row { background-color: #f3f4f6; font-weight: 600; }
+        .code-inline {
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13.5px;
+            direction: ltr;
+            display: inline-block;
+        }
+        .license-box {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 40px;
+        }
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 25px;
+            font-size: 13.5px;
+            color: var(--text-muted);
+        }
     </style>
 </head>
 <body>
-    <h1>نبيل أمزيل — الأرشيف الرسمي للتوظيف والامتثال والتصريح الإداري</h1>
-    
-    <div class="box">
-        <strong>📌 طبيعة الأرشيف وأهدافه</strong>
-        <p>أرشيف إداري محايد ومستقل لتوثيق بيانات التوظيف، والتصريح بالأجور، والتحويلات المصرفية، والامتثال التنظيمي لسلسلة التوريد الخاصة بالمزرعة 41 (مجموعة مارايسا / أزورا).</p>
+
+    <header>
+        <h1>نبيل أمزيل — الأرشيف الرسمي للتوظيف والامتثال</h1>
+        <p class="subtitle">مجموعة البيانات الإدارية العامة وسجل الامتثال التنظيمي</p>
+    </header>
+
+    <div class="section-box">
+        <h3>📌 نظرة عامة على المستودع والأهداف</h3>
+        <ul>
+            <li><strong>الطبيعة:</strong> أرشيف إداري محايد وموضوعي وغير قابل للتعديل.</li>
+            <li><strong>النطاق:</strong> توثيق بيانات التوظيف المحققة، وإقرارات الضمان الاجتماعي (CNSS)، والتحويلات البنكية الفعلية، والامتثال التنظيمي المتعلق بالمزرعة 41 (مجموعة مارايسا / أزورا).</li>
+            <li><strong>الأطر التنظيمية:</strong> قانون العناية الواجبة بسلسلة التوريد الألماني (LkSG)، والتوجيه الأوروبي للعناية الواجبة (EU CSDDD)، ومبادئ الأمم المتحدة التوجيهية (UNGP)، واتفاقيات منظمة العمل الدولية الأساسية (ILO).</li>
+        </ul>
     </div>
 
     <h2>⏰ تفاصيل التوظيف</h2>
     <ul>
-        <li><strong>فترة العمل:</strong> 9 أكتوبر 2025 – 22 ديسمبر 2025</li>
+        <li><strong>فترة الخدمة:</strong> 9 أكتوبر 2025 – 22 ديسمبر 2025</li>
         <li><strong>مدة العمل الفعلية:</strong> 47 يوم عمل</li>
-        <li><strong>الشركة/الموقع:</strong> شركة مارايسا (مجموعة أزورا) — المزرعة رقم 41، جهة الداخلة، المغرب</li>
+        <li><strong>مشغل الموقع:</strong> شركة مارايسا (مجموعة أزورا) — المزرعة رقم 41، جهة الداخلة، المغرب</li>
     </ul>
 
-    <h2>🔗 المراجع الدولية والقضايا النشطة</h2>
+    <h2>🔗 مراجع الملفات والقضايا التنظيمية</h2>
     <ul>
-        <li><strong>مرجع مكتب BAFA (ألمانيا - LkSG):</strong> <span class="code">80005772</span></li>
-        <li><strong>مرجع الامتثال لشركة Lidl:</strong> <span class="code">80005816</span></li>
-        <li><strong>مرجع الامتثال لشركة Rewe:</strong> <span class="code">80005817</span></li>
+        <li><strong>مرجع الشكوى لدى مكتب BAFA (ألمانيا - LkSG):</strong> <span class="code-inline">80005772</span></li>
+        <li><strong>مرجع حالة الامتثال لدى شركة Lidl:</strong> <span class="code-inline">80005816</span></li>
+        <li><strong>مرجع حالة الامتثال لدى شركة Rewe:</strong> <span class="code-inline">80005817</span></li>
     </ul>
 
     <h2>📊 الجزء الأول — البيانات المالية والإدارية</h2>
 
-    <h3>1. التصريحات الحكومية لدى الصندوق الوطني للضمان الاجتماعي (CNSS)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>الشهر</th>
-                <th>الأيام المصرح بها</th>
-                <th>الأجر المصرح به (درهم)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>أكتوبر 2025</td><td>18 يوم</td><td>1,931.31</td></tr>
-            <tr><td>نوفمبر 2025</td><td>14 يوم</td><td>1,560.38</td></tr>
-            <tr><td>ديسمبر 2025</td><td>15 يوم</td><td>1,504.40</td></tr>
-            <tr style="font-weight:bold; background:#f3f4f6;"><td>الإجمالي</td><td>47 يوم</td><td>4,996.09 درهم</td></tr>
-        </tbody>
-    </table>
+    <h3>1. التصريحات الحكومية الرسمية لدى الصندوق الوطني للضمان الاجتماعي (CNSS)</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>الشهر</th>
+                    <th>الأيام المصرح بها</th>
+                    <th>الأجر المصرح به (درهم)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>أكتوبر 2025</td><td>18 يوم</td><td>1,931.31</td></tr>
+                <tr><td>نوفمبر 2025</td><td>14 يوم</td><td>1,560.38</td></tr>
+                <tr><td>ديسمبر 2025</td><td>15 يوم</td><td>1,504.40</td></tr>
+                <tr class="highlight-row"><td>الإجمالي</td><td>47 يوم</td><td>4,996.09 درهم</td></tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h3>2. المبالغ الحقيقية المستلمة في الحساب البنكي</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>تاريخ التحويل</th>
-                <th>المبلغ المستلم (درهم)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>20 أكتوبر 2025</td><td>169.20</td></tr>
-            <tr><td>4 نوفمبر 2025</td><td>281.93</td></tr>
-            <tr><td>3 ديسمبر 2025</td><td>227.53</td></tr>
-            <tr><td>3 ديسمبر 2025</td><td>332.67</td></tr>
-            <tr><td>5 يناير 2026</td><td>37.17</td></tr>
-            <tr style="font-weight:bold; background:#f3f4f6;"><td>المجموع المستلم فعلياً</td><td>1,048.50 درهم</td></tr>
-        </tbody>
-    </table>
+    <h3>2. التحويلات البنكية الفعلية المستلمة</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>تاريخ المعاملة البنكية</th>
+                    <th>المبلغ المستلم (درهم)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>20 أكتوبر 2025</td><td>169.20</td></tr>
+                <tr><td>4 نوفمبر 2025</td><td>281.93</td></tr>
+                <tr><td>3 ديسمبر 2025</td><td>227.53</td></tr>
+                <tr><td>3 ديسمبر 2025</td><td>332.67</td></tr>
+                <tr><td>5 يناير 2026</td><td>37.17</td></tr>
+                <tr class="highlight-row"><td>المجموع المدفوع فعلياً</td><td>1,048.50 درهم</td></tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h3>3. تفاصيل ورقة الأداء والأقتطاعات (Bulletin de Paie)</h3>
+    <h3>3. تفاصيل ورقة الأداء والاقتطاعات (Bulletin de Paie Extract)</h3>
     <ul>
         <li><strong>الراتب الإجمالي:</strong> 918.73 درهم</li>
-        <li><strong>اقتطاع المتجر الداخلي (<span class="code">Retenue Moulihanout</span>):</strong> -856.82 درهم</li>
+        <li><strong>اقتطاع المتجر الداخلي (<span class="code-inline">Retenue Mollhanout</span>):</strong> -856.82 درهم</li>
         <li><strong>الاشتراكات الاجتماعية:</strong> -51.92 درهم</li>
-        <li><strong>الصافي المستلم (ديسمبر 2025):</strong> 0.00 درهم</li>
+        <li><strong>صافي الراتب المستلم (ديسمبر 2025):</strong> 0.00 درهم (متبوعاً بحذف البيانات الإدارية)</li>
     </ul>
 
     <h3>4. الفارق الرقمي المسجل</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>البيان</th>
-                <th>المبلغ (درهم)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>المصرح به حكومياً (CNSS)</td><td>4,996.09</td></tr>
-            <tr><td>المستلم فعلياً في البنك</td><td>1,048.50</td></tr>
-            <tr style="font-weight:bold; background:#f3f4f6;"><td>الفارق المسجل</td><td>3,947.59 درهم (فجوة بنسبة 79.02%)</td></tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>بيان السجل</th>
+                    <th>المبلغ (درهم)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>المبلغ الإجمالي المصرح به حكومياً (CNSS)</td><td>4,996.09</td></tr>
+                <tr><td>التحويلات البنكية الحقيقية المستلمة</td><td>1,048.50</td></tr>
+                <tr class="highlight-row"><td>الفجوة الرقمية المسجلة</td><td>3,947.59 درهم (فارق بنسبة 79.02%)</td></tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h2>⚖️ الجزء الثاني — المسارات القانونية والتنظيمية</h2>
+    <h2>⚖️ الجزء الثاني — الأطر القانونية والمسارات التنظيمية</h2>
+    
+    <h3>المسار القانوني الوطني (المملكة المغربية)</h3>
     <ul>
-        <li><strong>مدونة الشغل المغربية:</strong> تقييم الامتثال بموجب المادة 387 المتعلقة بحماية الأجور ومنع الاقتطاعات غير القانونية.</li>
-        <li><strong>القرار الإداري:</strong> إشعار إداري رسمي صادر في ديسمبر 2025 في المجمّع السكني للمزرعة 41 بتقرر تعليق نظام الاقتطاع الداخلي ("مول الحانوت") اعتباراً من 1 يناير 2026 وتعميم الإجراء بعد الشكاوى الرسمية المقدمة عبر بوابة "شكاية".</li>
-        <li><strong>الامتثال الدولي:</strong> يتوافق الملف مع قانون العناية الواجبة بسلسلة التوريد الألماني (LkSG)، والتوجيه الأوروبي (CSDDD)، ومبادئ الأمم المتحدة التوجيهية (UNGP).</li>
+        <li><strong>مدونة الشغل المغربية:</strong> تقييم الامتثال بموجب المادة 387 المتعلقة بحماية الأجور ومنع الاقتطاعات التعسفية وغير القانونية.</li>
+        <li><strong>القرار الإداري العُرفي:</strong> إشعار إداري رسمي تم إصداره في ديسمبر 2025 بالمجمّع السكني للمزرعة 41 بتقرر تعليق نظام الاقتطاع الداخلي (<span class="code-inline">Retenue Mollhanout</span>) اعتباراً من 1 يناير 2026 وتعميم الإجراء عبر جميع فروع مجموعة أزورا، عقب الشكاوى الرسمية المقدمة عبر البوابة الوطنية "شكاية".</li>
+        <li><strong>الإيداعات الإدارية:</strong> تقديم البيانات الواقعية للمراجعة من قبل السلطات الإدارية والقضائية المختصة.</li>
     </ul>
 
-    <h2>📜 الجزء الثالث — إعلان المؤلف والترخيص</h2>
-    <p>هذا السجل محمي بموجب رخصة <strong>Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)</strong>.</p>
-    <p><strong>المؤلف:</strong> نبيل أمزيل | العيون، المغرب | البريد: rolandonabil955@gmail.com</p>
+    <h3>معايير سلاسل التوريد الدولية</h3>
+    <ul>
+        <li>تم تقييم الحالة وفقاً لقانون العناية الواجبة بسلسلة التوريد الألماني (LkSG)، والتوجيه الأوروبي CSDDD، ومبادئ الأمم المتحدة التوجيهية، ومعايير العمل الأساسية لمنظمة العمل الدولية (ILO).</li>
+    </ul>
+
+    <h2>📂 الجزء الثالث — وثائق المستودع</h2>
+    <ul>
+        <li><span class="code-inline">Nabil_Amzil_Official_Record_Arabic.html</span> — السجل الرئيسي (النسخة العربية)</li>
+        <li><span class="code-inline">Nabil_Amzil_Official_Record_English.html</span> — السجل الرئيسي (النسخة الإنجليزية)</li>
+    </ul>
+
+    <div class="license-box">
+        <h2>📜 الجزء الرابع — الترخيص وشروط الاستخدام</h2>
+        <p><strong>Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)</strong></p>
+        <ul>
+            <li>✅ <strong>الاستخدامات المسموح بها:</strong> المراجعة المؤسسية، والتدقيق المستقل، والامتثال القانوني، والاستشهاد الأكاديمي، والتقارير الصحفية، والأرشفة التنظيمية.</li>
+            <li>❌ <strong>الاستخدامات المحظورة:</strong> أي تعديل أو تغيير أو تحريف للنصوص الواقعية أو الأرقام أو الاستشهادات القانونية.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <h3>✍ الإقرار الرسمي والملكية</h3>
+        <p>أنا، نبيل أمزيل، أعلن تحت مسؤوليتي الرسمية أن هذا المستودع يحتوي على بيانات واقعية مستخرجة مباشرة من الإيداعات الإدارية الحكومية، والسجلات البنكية، وأوراق الأداء دون أي تفسيرات شخصية أو تعديلات ذاتية.</p>
+        <p>
+            <strong>المؤلف:</strong> نبيل أمزيل<br>
+            <strong>الموقع:</strong> العيون، المغرب<br>
+            <strong>البريد الإلكتروني:</strong> rolandonabil955@gmail.com<br>
+            <strong>مراجع القضايا:</strong> BAFA Ref 80005772 | Lidl Ref 80005816 | Rewe Ref 80005817
+        </p>
+        <p style="margin-top: 20px; font-size: 12px; color: #6b7280;">
+            أرشيف الشفافية والامتثال © نبيل أمزيل. تم النشر عبر صفحات جيت هاب (GitHub Pages).
+        </p>
+    </footer>
+
 </body>
 </html>
