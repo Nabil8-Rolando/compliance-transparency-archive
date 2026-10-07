@@ -1,4 +1,13 @@
+---
+layout: default
+title: Nabil Amzil - Official Employment and Compliance Record
+---
+
 <link rel="stylesheet" href="style.css">
+
+## Official Employment and Compliance Record
+...rest of the page content...
+
 
 ---
 layout: default
