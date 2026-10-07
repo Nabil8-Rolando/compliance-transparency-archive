@@ -18,8 +18,8 @@
             color: var(--text-main);
             line-height: 1.7;
             margin: 0 auto;
-            max-width: 900px;
-            padding: 60px 30px;
+            max-width: 950px;
+            padding: 50px 30px;
         }
         header {
             border-bottom: 2px solid var(--primary-color);
@@ -27,17 +27,10 @@
             margin-bottom: 40px;
         }
         h1 {
-            font-size: 26px;
+            font-size: 24px;
             color: var(--primary-color);
             margin: 0 0 10px 0;
             font-weight: 700;
-        }
-        .subtitle {
-            font-size: 15px;
-            color: var(--text-muted);
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
         h2 {
             font-size: 18px;
@@ -48,34 +41,37 @@
             margin-bottom: 20px;
             font-weight: 600;
         }
-        .executive-summary {
-            background-color: var(--bg-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 20px 25px;
-            margin-bottom: 40px;
-            border-radius: 0 4px 4px 0;
-        }
-        .executive-summary p {
-            margin: 0 0 10px 0;
+        h3 {
+            font-size: 16px;
+            color: var(--text-main);
+            margin-top: 25px;
+            margin-bottom: 10px;
             font-weight: 600;
         }
+        .section-box {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 0 4px 4px 0;
+        }
         ul {
-            margin: 0;
+            margin: 0 0 15px 0;
             padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-size: 15px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 25px 0;
+            margin: 15px 0 25px 0;
             background-color: #ffffff;
         }
         th, td {
             border: 1px solid var(--border-color);
-            padding: 14px 16px;
+            padding: 12px 15px;
             font-size: 14px;
         }
         th {
@@ -90,44 +86,17 @@
         .text-right {
             text-align: right;
         }
-        details {
+        .license-box {
+            background-color: #f3f4f6;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
-            margin-bottom: 12px;
-            background-color: #ffffff;
-            transition: background-color 0.2s;
-        }
-        details:hover {
-            background-color: var(--bg-light);
-        }
-        summary {
-            padding: 16px 20px;
-            font-weight: 600;
-            color: var(--primary-color);
-            cursor: pointer;
-            outline: none;
-        }
-        details[open] summary {
-            border-bottom: 1px solid var(--border-color);
-            background-color: var(--bg-light);
-        }
-        details div {
             padding: 20px;
-            background-color: #ffffff;
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-        .note {
-            font-size: 13px;
-            color: var(--text-muted);
-            margin-top: 8px;
-            font-style: italic;
+            border-radius: 4px;
+            margin-top: 40px;
         }
         footer {
-            margin-top: 60px;
+            margin-top: 50px;
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
-            text-align: center;
             font-size: 13px;
             color: var(--text-muted);
         }
@@ -136,90 +105,177 @@
 <body>
 
     <header>
-        <h1>Official Employment & Compliance Archive</h1>
-        <p class="subtitle">Subject: Nabil Amzil — Independent Regulatory & Due Diligence Dossier</p>
+        <h1>Nabil Amzil — Official Employment & Compliance Archive</h1>
     </header>
 
-    <div class="executive-summary">
-        <p>Repository Overview & Objectives</p>
+    <div class="section-box">
+        <h3>📌 Repository Overview & Objectives</h3>
         <ul>
-            <li><strong>Nature:</strong> A neutral, verifiable, and immutable administrative archive.</li>
-            <li><strong>Scope:</strong> Documentation of employment records, financial discrepancies, deductions, and supply chain compliance regarding Farm 41 (Maraissa Group / Azura).</li>
-            <li><strong>Regulatory Frameworks:</strong> German Supply Chain Due Diligence Act (LkSG), UN Guiding Principles (UNGP), and International Labour Organization (ILO) standards.</li>
+            <li><strong>Nature:</strong> Neutral, verifiable, and immutable administrative archive.</li>
+            <li><strong>Scope:</strong> Documenting employment data, wage declarations, bank transfers, and regulatory compliance regarding Farm 41 (Maraissa / Azura Group).</li>
+            <li><strong>Frameworks:</strong> German Supply Chain Due Diligence Act (LkSG), EU CSDDD, UN Guiding Principles (UNGP), and ILO Conventions.</li>
         </ul>
     </div>
 
-    <h2>1. Employment Details</h2>
+    <h2>⏰ Employment Details</h2>
     <ul>
         <li><strong>Period:</strong> October 9, 2025 – December 22, 2025</li>
-        <li><strong>Total Duration:</strong> 47 working days</li>
-        <li><strong>Employer:</strong> Maraissa (Azura Group) — Farm No. 41, Dakhla, Morocco</li>
+        <li><strong>Duration:</strong> 47 working days</li>
+        <li><strong>Company:</strong> Maraissa (Azura Group) — Farm 41, Dakhla, Morocco</li>
     </ul>
 
-    <h2>2. International References & Active Case Files</h2>
+    <h2>🔗 International References & Case Files</h2>
     <ul>
-        <li><strong>BAFA Reference (LkSG - Germany):</strong> 80005772</li>
-        <li><strong>Supply Chain Reference (Lidl):</strong> 509078</li>
-        <li><strong>Supply Chain Reference (Rewe):</strong> 00905017</li>
+        <li><strong>BAFA (Germany - LkSG):</strong> Reference 80005772</li>
+        <li><strong>Lidl Supply Chain Ref:</strong> 80005816</li>
+        <li><strong>Rewe Supply Chain Ref:</strong> 80005817</li>
     </ul>
 
-    <h2>3. Financial Data & Numerical Discrepancies</h2>
+    <h2>📊 Part 1 — Financial & Administrative Data</h2>
+
+    <h3>1. CNSS Government Declarations (Morocco)</h3>
     <table>
         <thead>
             <tr>
-                <th class="text-right">Period (2025)</th>
+                <th>Month</th>
                 <th>Declared Days</th>
-                <th>Declared Wage (MAD)</th>
-                <th>Actual Bank Deposit (MAD)</th>
+                <th class="text-right">Declared Wage (MAD)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="text-right">October</td>
+                <td>October 2025</td>
                 <td>18</td>
-                <td>1,931.31</td>
-                <td>-</td>
+                <td class="text-right">1,931.31</td>
             </tr>
             <tr>
-                <td class="text-right">November</td>
+                <td>November 2025</td>
                 <td>14</td>
-                <td>1,560.38</td>
-                <td>-</td>
+                <td class="text-right">1,560.38</td>
             </tr>
             <tr>
-                <td class="text-right">December</td>
+                <td>December 2025</td>
                 <td>15</td>
-                <td>1,504.40</td>
-                <td>1,048.50 (Net)</td>
+                <td class="text-right">1,504.40</td>
             </tr>
             <tr>
-                <th class="text-right">Total</th>
+                <th>Total</th>
                 <th>47 Days</th>
-                <th>4,996.09 MAD</th>
-                <th>-</th>
+                <th class="text-right">4,996.09 MAD</th>
             </tr>
         </tbody>
     </table>
-    <div class="note">* Note: Internal deductions applied via Retenue Mollhanout significantly impacted net disbursement during the employment period.</div>
 
-    <h2>4. Legal Correspondence & Official Notices</h2>
+    <h3>2. Actual Bank Deposits Received</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th class="text-right">Received Amount (MAD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>October 20, 2025</td>
+                <td class="text-right">169.20</td>
+            </tr>
+            <tr>
+                <td>November 4, 2025</td>
+                <td class="text-right">281.93</td>
+            </tr>
+            <tr>
+                <td>December 3, 2025</td>
+                <td class="text-right">227.53</td>
+            </tr>
+            <tr>
+                <td>December 3, 2025</td>
+                <td class="text-right">332.67</td>
+            </tr>
+            <tr>
+                <td>January 5, 2026</td>
+                <td class="text-right">37.17</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th class="text-right">1,048.50 MAD</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3. Payslip Extract & Deductions (Bulletin de Paie)</h3>
+    <ul>
+        <li><strong>Gross Salary:</strong> 918.73 MAD</li>
+        <li><strong>Internal Store Deduction (Retenue Moulihanout):</strong> -856.82 MAD</li>
+        <li><strong>Social Contribution:</strong> -51.92 MAD</li>
+        <li><strong>Net Paid (December 2025):</strong> 0.00 MAD (followed by administrative data purging)</li>
+    </ul>
+
+    <h3>4. Recorded Numerical Discrepancy</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Statement</th>
+                <th class="text-right">Amount (MAD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Government Declared (CNSS)</td>
+                <td class="text-right">4,996.09</td>
+            </tr>
+            <tr>
+                <td>Actual Bank Received</td>
+                <td class="text-right">1,048.50</td>
+            </tr>
+            <tr>
+                <td><strong>Numerical Gap</strong></td>
+                <td class="text-right"><strong>3,947.59 MAD (79.02% Discrepancy)</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>⚖️ Part 2 — Legal Frameworks & Regulatory Tracks</h2>
     
-    <details>
-        <summary>Official Response: Case File #509078 Details (May 28, 2026)</summary>
-        <div>
-            Official correspondence granting explicit authorization to share full identity data with certification bodies, rejecting anonymity, and requesting historical supplier account audits.
-        </div>
-    </details>
+    <h3>National Track (Morocco)</h3>
+    <ul>
+        <li><strong>Labor Code Violation:</strong> Infringement of Article 387 regarding wage protection and arbitrary deductions.</li>
+        <li><strong>Administrative Decision:</strong> Official notice issued in December 2025 at Farm 41 residential compound suspending the internal deduction system (“Moulihanout”) effective January 1, 2026, and generalizing the measure across all Azura Group branches, following formal complaints submitted via the national Chikaya platform.</li>
+        <li><strong>Jurisdiction:</strong> Factual data submitted for review by competent administrative and judicial authorities.</li>
+    </ul>
 
-    <details>
-        <summary>Notice: Regional Human Rights Commission (May 1, 2026)</summary>
-        <div>
-            Official notice submitted to the Regional Human Rights Commission (Laayoune-Sakia El Hamra) regarding administrative practices and operational conditions at Farm 41.
-        </div>
-    </details>
+    <h3>International Supply Chain Compliance</h3>
+    <ul>
+        <li>Fully aligned with LkSG (Germany), EU CSDDD, UNGP, and ILO core labor standards.</li>
+    </ul>
+
+    <h2>📂 Part 3 — Repository Files</h2>
+    <ul>
+        <li><code>Nabil_Amzil_Official_Record_Arabic.md</code> — Complete official record (Arabic)</li>
+        <li><code>Nabil_Amzil_Official_Record_English.md</code> — Complete official record (English)</li>
+    </ul>
+
+    <div class="license-box">
+        <h2>📜 Part 4 — License & Usage Terms</h2>
+        <p><strong>Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)</strong></p>
+        <ul>
+            <li>✅ <strong>Permitted:</strong> Professional review, auditing, compliance sharing, academic citation, media reporting, and institutional archiving.</li>
+            <li>❌ <strong>Prohibited:</strong> Any modification, alteration, or adaptation of the original text or data figures.</li>
+        </ul>
+    </div>
 
     <footer>
-        <p>This document is maintained as a transparent, immutable public record under international human rights and supply chain transparency standards.</p>
+        <h3>✍ Author Declaration & Verification</h3>
+        <p>I, Nabil Amzil, declare that this archive is structured strictly on official government, banking, and administrative documents without personal interpretation.</p>
+        <p>
+            <strong>Author:</strong> Nabil Amzil<br>
+            <strong>Location:</strong> Laayoune, Morocco<br>
+            <strong>Contact:</strong> rolandonabil955@gmail.com<br>
+            <strong>References:</strong> BAFA 80005772 | Lidl 80005816 | Rewe 80005817
+        </p>
+        <p style="margin-top: 20px; font-size: 12px;">
+            compliance-transparency-archive is maintained by Nabil8-Rolando.<br>
+            This page was generated by GitHub Pages.
+        </p>
     </footer>
 
 </body>
