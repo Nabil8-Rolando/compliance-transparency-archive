@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Employment & Compliance Archive - Nabil Amzil">
     <title>Nabil Amzil — Official Employment & Compliance Archive</title>
+
     <style>
         :root {
             --primary-color: #111827;
@@ -11,27 +13,56 @@
             --bg-light: #f9fafb;
             --text-main: #1f2937;
             --text-muted: #4b5563;
+            --accent-primary: #1e40af;
+            --accent-green: #059669;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             background-color: #ffffff;
             color: var(--text-main);
             line-height: 1.7;
             margin: 0 auto;
             max-width: 950px;
-            padding: 50px 30px;
+            padding: 40px 30px;
         }
-        header {
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 25px;
             border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        /* Header */
+        header {
             margin-bottom: 40px;
         }
         h1 {
-            font-size: 24px;
+            font-size: 28px;
             color: var(--primary-color);
-            margin: 0 0 10px 0;
             font-weight: 700;
+            margin-bottom: 10px;
         }
+        .intro {
+            background: var(--bg-light);
+            padding: 20px;
+            border-left: 4px solid var(--accent-primary);
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        /* Section Titles */
         h2 {
             font-size: 18px;
             color: var(--primary-color);
@@ -48,51 +79,101 @@
             margin-bottom: 10px;
             font-weight: 600;
         }
+
+        /* Section Box */
         .section-box {
             background-color: var(--bg-light);
             border-left: 4px solid var(--primary-color);
             padding: 20px;
             margin-bottom: 30px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 4px;
         }
-        ul {
-            margin: 0 0 15px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 6px;
-            font-size: 15px;
-        }
+
+        /* Lists */
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 8px; font-size: 15px; }
+
+        /* Tables */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0 25px 0;
+            margin: 20px 0 25px 0;
             background-color: #ffffff;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        thead {
+            background: var(--accent-primary);
+            color: white;
         }
         th, td {
-            border: 1px solid var(--border-color);
             padding: 12px 15px;
+            border: 1px solid var(--border-color);
             font-size: 14px;
-        }
-        th {
-            background-color: var(--bg-light);
-            color: var(--primary-color);
-            font-weight: 600;
-            text-align: left;
-        }
-        td {
-            text-align: left;
         }
         .text-right {
             text-align: right;
+            font-family: 'Monaco', monospace;
+            color: var(--accent-primary);
+            font-weight: 600;
         }
-        .license-box {
-            background-color: #f3f4f6;
+
+        /* Metrics */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .metric-item {
+            background: var(--bg-light);
+            padding: 20px;
+            border-left: 4px solid var(--accent-primary);
+            border-radius: 4px;
+        }
+        .metric-item.critical { border-left-color: #dc2626; }
+        .metric-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; }
+        .metric-value {
+            font-size: 22px;
+            font-weight: 800;
+            font-family: 'Monaco', monospace;
+            margin-top: 5px;
+        }
+        .metric-item.critical .metric-value { color: #dc2626; }
+
+        /* References */
+        .references-box {
+            background: var(--bg-light);
             border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .reference-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .reference-item:last-child { border-bottom: none; }
+        .reference-label { font-weight: 600; }
+        .reference-value {
+            background: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-family: 'Monaco', monospace;
+            border: 1px solid var(--border-color);
+        }
+
+        /* License */
+        .license-box {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--accent-green);
             padding: 20px;
             border-radius: 4px;
             margin-top: 40px;
         }
+
+        /* Footer */
         footer {
             margin-top: 50px;
             border-top: 1px solid var(--border-color);
@@ -100,23 +181,51 @@
             font-size: 13px;
             color: var(--text-muted);
         }
+        footer h3 { margin-bottom: 15px; }
+        .footer-meta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+        }
     </style>
 </head>
+
 <body>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Financial Data</a>
+        <a href="#">Legal Frameworks</a>
+        <a href="#">Case References</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Header -->
     <header>
         <h1>Nabil Amzil — Official Employment & Compliance Archive</h1>
     </header>
 
+    <!-- Intro Banner -->
+    <div class="intro">
+        <p>
+            This archive provides a neutral, factual, and verifiable administrative record related to employment, wage declarations, bank transfers, and compliance documentation associated with Farm 41 (Maraissa / Azura Group), Dakhla, Morocco.
+        </p>
+        <p><strong>Primary Reference:</strong> BAFA Case No. 80005772</p>
+    </div>
+
+    <!-- Overview -->
     <div class="section-box">
         <h3>Repository Overview & Objectives</h3>
         <ul>
-            <li><strong>Nature:</strong> Neutral, verifiable, and immutable administrative archive.</li>
-            <li><strong>Scope:</strong> Documentation of employment data, wage declarations, bank transfers, and regulatory compliance related to Farm 41 (Maraissa / Azura Group).</li>
+            <li><strong>Nature:</strong> Neutral, verifiable, immutable administrative archive.</li>
+            <li><strong>Scope:</strong> Employment data, CNSS declarations, bank transfers, compliance records.</li>
             <li><strong>Frameworks:</strong> LkSG (Germany), EU CSDDD, UNGP, ILO Conventions.</li>
         </ul>
     </div>
 
+    <!-- Employment Details -->
     <h2>Employment Details</h2>
     <ul>
         <li><strong>Period:</strong> October 9, 2025 – December 22, 2025</li>
@@ -124,17 +233,31 @@
         <li><strong>Company:</strong> Maraissa (Azura Group) — Farm 41, Dakhla, Morocco</li>
     </ul>
 
+    <!-- References -->
     <h2>International References & Case Files</h2>
-    <ul>
-        <li><strong>BAFA (Germany – LkSG):</strong> Reference 80005772</li>
-        <li><strong>Lidl Supply Chain Reference:</strong> 80005816</li>
-        <li><strong>Rewe Supply Chain Reference:</strong> 80005817</li>
-        <li><strong>Agraya Complaint Ticket:</strong> 509078</li>
-    </ul>
+    <div class="references-box">
+        <div class="reference-item">
+            <div class="reference-label">BAFA (Germany – LkSG)</div>
+            <div class="reference-value">80005772</div>
+        </div>
+        <div class="reference-item">
+            <div class="reference-label">Lidl Supply Chain</div>
+            <div class="reference-value">80005816</div>
+        </div>
+        <div class="reference-item">
+            <div class="reference-label">Rewe Supply Chain</div>
+            <div class="reference-value">80005817</div>
+        </div>
+        <div class="reference-item">
+            <div class="reference-label">Agraya Complaint Ticket</div>
+            <div class="reference-value">509078</div>
+        </div>
+    </div>
 
+    <!-- Financial Data -->
     <h2>Part 1 — Financial & Administrative Data</h2>
 
-    <h3>1. CNSS Government Declarations (Morocco)</h3>
+    <h3>CNSS Government Declarations (Morocco)</h3>
     <table>
         <thead>
             <tr>
@@ -144,30 +267,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>October 2025</td>
-                <td>18</td>
-                <td class="text-right">1,931.31</td>
-            </tr>
-            <tr>
-                <td>November 2025</td>
-                <td>14</td>
-                <td class="text-right">1,560.38</td>
-            </tr>
-            <tr>
-                <td>December 2025</td>
-                <td>15</td>
-                <td class="text-right">1,504.40</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th>47 days</th>
-                <th class="text-right">4,996.09 MAD</th>
-            </tr>
+            <tr><td>October 2025</td><td>18</td><td class="text-right">1,931.31</td></tr>
+            <tr><td>November 2025</td><td>14</td><td class="text-right">1,560.38</td></tr>
+            <tr><td>December 2025</td><td>15</td><td class="text-right">1,504.40</td></tr>
+            <tr><th>Total</th><th>47 days</th><th class="text-right">4,996.09 MAD</th></tr>
         </tbody>
     </table>
 
-    <h3>2. Actual Bank Deposits Received</h3>
+    <h3>Confirmed Net Bank Deposits</h3>
     <table>
         <thead>
             <tr>
@@ -176,42 +283,36 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>October 20, 2025</td>
-                <td class="text-right">169.20</td>
-            </tr>
-            <tr>
-                <td>November 4, 2025</td>
-                <td class="text-right">281.93</td>
-            </tr>
-            <tr>
-                <td>December 3, 2025</td>
-                <td class="text-right">227.53</td>
-            </tr>
-            <tr>
-                <td>December 3, 2025</td>
-                <td class="text-right">332.67</td>
-            </tr>
-            <tr>
-                <td>January 5, 2026</td>
-                <td class="text-right">37.17</td>
-            </tr>
-            <tr>
-                <th>Total</th>
-                <th class="text-right">1,048.50 MAD</th>
-            </tr>
+            <tr><td>October 20, 2025</td><td class="text-right">169.20</td></tr>
+            <tr><td>November 4, 2025</td><td class="text-right">281.93</td></tr>
+            <tr><td>December 3, 2025</td><td class="text-right">227.53</td></tr>
+            <tr><td>December 3, 2025</td><td class="text-right">332.67</td></tr>
+            <tr><td>January 5, 2026</td><td class="text-right">37.17</td></tr>
+            <tr><th>Total</th><th class="text-right">1,048.50 MAD</th></tr>
         </tbody>
     </table>
 
-    <h3>Payslip Extract & Deductions</h3>
-    <ul>
-        <li><strong>Gross Salary:</strong> 918.73 MAD</li>
-        <li><strong>Internal Store Deduction:</strong> -856.82 MAD</li>
-        <li><strong>Social Contribution:</strong> -51.92 MAD</li>
-        <li><strong>Net Paid (December 2025):</strong> 0.00 MAD</li>
-    </ul>
+    <h3>Official Payslip Data</h3>
+    <div class="metrics-grid">
+        <div class="metric-item">
+            <div class="metric-label">Gross Salary</div>
+            <div class="metric-value">918.73</div>
+        </div>
+        <div class="metric-item critical">
+            <div class="metric-label">Retenue Mollhanout</div>
+            <div class="metric-value">-856.82</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">Social Contribution</div>
+            <div class="metric-value">-51.92</div>
+        </div>
+        <div class="metric-item critical">
+            <div class="metric-label">Net Paid</div>
+            <div class="metric-value">0.00</div>
+        </div>
+    </div>
 
-    <h3>Recorded Numerical Discrepancy</h3>
+    <h3>Recorded Net Discrepancy</h3>
     <table>
         <thead>
             <tr>
@@ -220,65 +321,61 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Government Declared (CNSS)</td>
-                <td class="text-right">4,996.09</td>
-            </tr>
-            <tr>
-                <td>Actual Bank Received</td>
-                <td class="text-right">1,048.50</td>
-            </tr>
-            <tr>
-                <td><strong>Numerical Gap</strong></td>
-                <td class="text-right"><strong>3,947.59 MAD</strong></td>
-            </tr>
+            <tr><td>Government Declared (CNSS)</td><td class="text-right">4,996.09</td></tr>
+            <tr><td>Actual Bank Received</td><td class="text-right">1,048.50</td></tr>
+            <tr><td><strong>Critical Gap (79.02%)</strong></td><td class="text-right"><strong style="color:#dc2626;">3,947.59 MAD</strong></td></tr>
         </tbody>
     </table>
 
+    <!-- Legal -->
     <h2>Part 2 — Legal Frameworks & Regulatory Tracks</h2>
-    
-    <h3>National Track (Morocco)</h3>
-    <ul>
-        <li><strong>Labor Code:</strong> Reference to Article 387 regarding wage protection and arbitrary deductions.</li>
-        <li><strong>Administrative Decision:</strong> Official notice issued in December 2025 suspending the internal deduction system (“Moulihanout”) effective January 1, 2026, generalized across Azura Group branches following formal complaints submitted via the national Chikaya platform.</li>
-        <li><strong>Jurisdiction:</strong> Factual data submitted for review by competent administrative and judicial authorities.</li>
-    </ul>
 
-    <h3>International Supply Chain Compliance</h3>
-    <ul>
-        <li>Documentation structured in line with LkSG (Germany), EU CSDDD, UNGP, and ILO core labor standards.</li>
-    </ul>
-
-    <h2>Part 3 — Repository Files</h2>
-    <ul>
-        <li><code>Nabil_Amzil_Official_Record_Arabic.md</code> — Complete official record (Arabic)</li>
-        <li><code>Nabil_Amzil_Official_Record_English.md</code> — Complete official record (English)</li>
-    </ul>
-
-    <div class="license-box">
-        <h2>License & Usage Terms</h2>
-        <p><strong>Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)</strong></p>
+    <div class="section-box">
+        <h3>National Track (Morocco)</h3>
         <ul>
-            <li><strong>Permitted:</strong> Professional review, auditing, compliance sharing, academic citation, media reporting, and institutional archiving.</li>
-            <li><strong>Prohibited:</strong> Any modification, alteration, or adaptation of the original text or data figures.</li>
+            <li><strong>Labor Code:</strong> Article 387 — wage protection and arbitrary deductions.</li>
+            <li><strong>Administrative Decision:</strong> Suspension of “Retenue Mollhanout” effective January 1, 2026.</li>
+            <li><strong>Jurisdiction:</strong> Data submitted to competent authorities.</li>
+        </ul>
+
+        <h3>International Supply Chain Compliance</h3>
+        <ul>
+            <li>Aligned with LkSG (Germany), EU CSDDD, UNGP, ILO standards.</li>
         </ul>
     </div>
 
+    <!-- Files -->
+    <h2>Part 3 — Repository Files</h2>
+    <ul>
+        <li><code>Nabil_Amzil_Official_Record_Arabic.md</code></li>
+        <li><code>Nabil_Amzil_Official_Record_English.md</code></li>
+    </ul>
+
+    <!-- License -->
+    <div class="license-box">
+        <h2>License & Usage Terms</h2>
+        <p><strong>Creative Commons Attribution-NoDerivatives 4.0 International</strong></p>
+        <ul>
+            <li><strong>Permitted:</strong> Review, auditing, compliance sharing, academic citation.</li>
+            <li><strong>Prohibited:</strong> Modification or alteration of original data.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <h3>Author Declaration & Verification</h3>
-        <p>
-            I, Nabil Amzil, declare that this archive is structured strictly on official government, banking, and administrative documents without personal interpretation.
-        </p>
+        <p>I, Nabil Amzil, declare that this archive is based strictly on official government, banking, and administrative documents.</p>
         <p>
             <strong>Author:</strong> Nabil Amzil<br>
             <strong>Location:</strong> Laayoune, Morocco<br>
             <strong>Contact:</strong> rolandonabil955@gmail.com<br>
-            <strong>References:</strong> BAFA 80005772 | Lidl 80005816 | Rewe 80005817
+            <strong>References:</strong> BAFA 80005772 | Lidl 80005816 | Rewe 80005817 | Agraya 509078
         </p>
-        <p style="margin-top: 20px; font-size: 12px;">
-            compliance-transparency-archive is maintained by Nabil8-Rolando.<br>
-            This page is published via GitHub Pages.
-        </p>
+
+        <div class="footer-meta">
+            <p>compliance-transparency-archive is maintained by Nabil8-Rolando.</p>
+            <p>Published via GitHub Pages — October 2026</p>
+        </div>
     </footer>
 
 </body>
